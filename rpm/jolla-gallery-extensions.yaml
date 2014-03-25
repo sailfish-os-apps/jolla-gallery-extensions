@@ -1,0 +1,22 @@
+Name: jolla-gallery-extensions
+Summary: Extension for jolla-gallery
+Version: 0.1
+Release: 1
+Group: Qt/Qt
+URL: https://github.com/SfietKonstantin/jolla-gallery-extensions
+License: TODO
+Sources:
+- '%{name}-%{version}.tar.bz2'
+Description: "Extension for jolla-gallery.\nBrings a slightly better user \nexperience
+  for videos."
+Configure: none
+Builder: qtc5
+PkgConfigBR:
+- Qt5Core
+Requires:
+- patch
+- sailfish-components-gallery-qt5 = 0.0.41
+- jolla-gallery = 0.1.45
+Files:
+- /opt/SfietKonstantin/extensions/jolla-gallery
+PkgBR: []
